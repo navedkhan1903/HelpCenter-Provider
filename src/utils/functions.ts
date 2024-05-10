@@ -25,3 +25,7 @@ export function validateSignup(name: string, email: string, pass: string) {
   }
   return true;
 }
+
+export function createTimeoutPromise() {
+  return new Promise<void>((resolve) => setTimeout(() => resolve(), 1000));
+}
