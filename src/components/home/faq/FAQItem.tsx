@@ -21,7 +21,7 @@ export default function FAQItem({ q, a }: { q: string; a: string }) {
         <p className="font-bold">{q}</p>
         <BiChevronDown
           size={25}
-          className={`rotate-${visible ? "180" : "0"} duration-200`}
+          className={`${visible ? "rotate-180" : "rotate-0"} duration-200`}
         />
       </div>
 
