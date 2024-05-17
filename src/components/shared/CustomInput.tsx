@@ -36,7 +36,7 @@ export default function CustomInput({
       ) : (
         <button
           onClick={onClick}
-          className="btn bg-primary hover:bg-primaryDark"
+          className="btn w-[119.6px] bg-primary hover:bg-primaryDark"
         >
           {label}
         </button>
