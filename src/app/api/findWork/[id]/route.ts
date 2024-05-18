@@ -8,7 +8,7 @@ export async function GET(req: NextRequest, context: any) {
     return NextResponse.json(
       await Booking.find({
         "address.pincode": context.params.id,
-        status: "Booked",
+        status: "Initiated",
       }),
     );
   } catch (err: any) {
